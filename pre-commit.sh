@@ -5,7 +5,10 @@ STASH_NAME="pre-commit-$(date +%s)"
 git stash save -q --keep-index $STASH_NAME
 
 # do the stuff
-markdown-math-gh-compiler input.md -o output.md
+for f in $(ls *_latex.md); do 
+  markdown-math-gh-compiler $f -o $(basename -s _latex.md $f).md; 
+done
+# markdown-math-gh-compiler README_latex.md -o README.md
 # stage the updates
 git add .
 
