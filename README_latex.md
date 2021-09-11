@@ -1,8 +1,8 @@
 # gh-md-test
 
-## Using [@jeremy-rifkin's solution](https://github.com/jeremy-rifkin/markdown-math-gh-compiler)
+Using [@jeremy-rifkin's solution](https://github.com/jeremy-rifkin/markdown-math-gh-compiler).
 
-### Usage
+## Usage
 
 Install the `markdown-math-gh-compiler` tool:
 ```
@@ -14,7 +14,7 @@ npm install -g markdown-math-gh-compiler
 markdown-math-gh-compiler myfile_latex.md -o myfile.md
 ```
 
-_Note: This tool seems to dislike the markdown syntax of using two spaces at the end of a line to create a new line (a new paragraph, in HTML-speak). For line breaks, leave an empty line instead (\_ indicates a space):_
+_Note: This tool seems to dislike the markdown syntax of using two spaces at the end of a line to create a new line (a new paragraph, in HTML-speak). For line breaks, leave an empty line instead (&lowbar; indicates a space):_
 ```
 # don't do this
 This is my first line.__
@@ -26,7 +26,7 @@ This is my first line.
 This is a new line.
 ```
 
-### Pre-Commit Hook
+## Pre-Commit Hook
 This repo uses a [pre-commit Git hook](https://githooks.com/) to automate this process. The source code with LaTeX syntax is found in the `*_latex.md` files, and the pre-commit script compiles these files into `*.md` files with the embedded images instead.
 
 > _TODO1: keep the `*_latex.md` files in a separate `src` dir so they don't clutter up a repo. This will probably also have to be done in the pre-commit script._  
@@ -42,7 +42,7 @@ in the root of this repo.
 
 (If you're confused about why the source file is prepended by `../../` in the `ln` command, remember that the source file location must be given relative to the link name.)
 
-### Example
+## Example
 
 My favorite equation is $e^{i\pi} = -1$.
 
