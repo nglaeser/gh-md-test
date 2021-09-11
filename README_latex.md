@@ -14,7 +14,7 @@ npm install -g markdown-math-gh-compiler
 markdown-math-gh-compiler myfile_latex.md -o myfile.md
 ```
 
-_Note: This tool seems to dislike the markdown syntax of using two spaces at the end of a line to create a new line (a new paragraph, in HTML-speak). For line breaks, leave an empty line instead (&lowbar; indicates a space):_
+_Note: This tool seems to dislike the markdown syntax of using two spaces at the end of a line to create a new line (a new paragraph, in HTML-speak). For line breaks, leave an empty line instead (underscore indicates a space):_
 ```
 # don't do this
 This is my first line.__
