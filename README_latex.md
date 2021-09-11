@@ -44,6 +44,8 @@ in the root of this repo.
 
 ## Example
 
+**Important: if you are using GitHub in dark mode, the equations will not be visible.**
+
 My favorite equation is $e^{i\pi} = -1$.
 
 Here it is centered:
