@@ -9,15 +9,15 @@ Install the `markdown-math-gh-compiler` tool:
 npm install -g markdown-math-gh-compiler
 ```
 
-[Compile a file with LaTeX syntax into one with embedded images](https://gist.github.com/a-rodin/fef3f543412d6e1ec5b6cf55bf197d7b) of the formulas (using GitHub's rendered) with
+[Compile a file with LaTeX syntax into one with embedded images](https://gist.github.com/a-rodin/fef3f543412d6e1ec5b6cf55bf197d7b) of the formulas (using GitHub's renderer) with
 ```
 markdown-math-gh-compiler myfile_latex.md -o myfile.md
 ```
 
-_Note: This tool seems to dislike the markdown syntax of using two spaces at the end of a line to create a new line (a new paragraph, in HTML-speak). For line breaks, leave an empty line instead:_
+_Note: This tool seems to dislike the markdown syntax of using two spaces at the end of a line to create a new line (a new paragraph, in HTML-speak). For line breaks, leave an empty line instead (\_ indicates a space):_
 ```
 # don't do this
-This is my first line.  
+This is my first line.__
 This is a new line.
 
 # do this
@@ -40,7 +40,7 @@ ln -s ../../pre-commit.sh .git/hooks/pre-commit
 ```
 in the root of this repo.   
 
-(If you're confused about why the source file is prepended by `../../`, remember that the source file location must be given relative to the link name.)
+(If you're confused about why the source file is prepended by `../../` in the `ln` command, remember that the source file location must be given relative to the link name.)
 
 ### Example
 
