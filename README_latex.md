@@ -15,9 +15,11 @@ _TODO2: TODO1 might mess with links from one `*.md` file to another? Need to pre
 
 The pre-commit script (which is run before every `git commit`) is [pre-commit.sh](pre-commit.sh). If you clone this repo and wish to use this Git hook as well, "install" the hook by running
 ```
+chmod +x pre-commit.sh
 ln -s ../../pre-commit.sh .git/hooks/pre-commit
 ```
-in the root of this repo. (If you're confused about why the source file is prepended by `../../`, remember that the source file location must be given relative to the link name.)
+in the root of this repo.   
+(If you're confused about why the source file is prepended by `../../`, remember that the source file location must be given relative to the link name.)
 
 ### Example
 
