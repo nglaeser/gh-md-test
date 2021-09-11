@@ -57,3 +57,10 @@ My favorite equation is <img alt="e^{i\pi} = -1" src="https://render.githubuserc
 Here it is centered:
 
 <p align="center"><img alt="e^{i\pi} = -1" src="https://render.githubusercontent.com/render/math?math=e%5E%7Bi%5Cpi%7D%20%3D%20-1"/></p>
+
+<hr/>
+
+Other potential tools:
+* VSCode plugin to (manually and on a per-equation basis) do the same thing: [math-to-image](https://marketplace.visualstudio.com/items?itemName=MeowTeam.vscode-math-to-image). It also includes an option to create a local SVG instead.
+* [Website](https://md-math.netlify.app/) that gives you both MD and HTML syntax for embedding the equation image
+* [Another web app](https://tex-image-link-generator.herokuapp.com/) that does the same thing
