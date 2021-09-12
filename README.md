@@ -35,7 +35,7 @@ This repo uses a [pre-commit Git hook](https://githooks.com/) to automate this p
 
 > _TODO2: TODO1 might mess with links from one `*.md` file to another? Need to preserve file structure. Also, relative links in source (`*_latex.md`) files need to be to the `*.md` version instead of the `*_latex.md` version._
 
-The script also preserves the directory structure, mirroring the directory structure in `src` to the root directory (but with compiled versions instead of the source files); see the behavior with [this test file](dir/test.md) (note the link should be to the compiled version).
+The script also preserves the directory structure, mirroring the directory structure in `src` to the root directory (but with compiled versions instead of the source files); see the behavior with [this](dir/test.md) and [this](dir/dir2/test2.md) test file (note the link in the source -- in this case `src/README_latex.md` are to the compiled versions).
 
 The pre-commit script (which is run before every `git commit`) is [pre-commit.sh](pre-commit.sh). If you clone this repo and wish to use this Git hook as well, "install" the hook by running
 
