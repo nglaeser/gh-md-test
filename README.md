@@ -33,8 +33,6 @@ This is a new line.
 
 This repo uses a [pre-commit Git hook](https://githooks.com/) to automate this process. The source code with LaTeX syntax is found in the `*_latex.md` files, and the pre-commit script compiles these files into `*.md` files with the embedded images instead.
 
-> _TODO1: keep the `*_latex.md` files in a separate `src` dir so they don't clutter up a repo. This will probably also have to be done in the pre-commit script._
-
 > _TODO2: TODO1 might mess with links from one `*.md` file to another? Need to preserve file structure. Also, relative links in source (`*_latex.md`) files need to be to the `*.md` version instead of the `*_latex.md` version._
 
 The pre-commit script (which is run before every `git commit`) is [pre-commit.sh](pre-commit.sh). If you clone this repo and wish to use this Git hook as well, "install" the hook by running
