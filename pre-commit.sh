@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# stash unstaged changes
+### stash unstaged changes
 STASH_NAME="pre-commit-$(date +%s)"
 git stash save -q --keep-index $STASH_NAME
 
-## do the stuff
+### do the stuff
 # look for _latex.md files in all subdirectories of src
 for f in $(find src -type f -name '*_latex.md'); do 
   # get the subdirectory name (remove 'src/' prefix)
@@ -21,15 +21,14 @@ for f in $(find src -type f -name '*_latex.md'); do
     # add path to outfile name
     outfile=$outdir/$outfile
   fi
-  # echo $f $outfile
   markdown-math-gh-compiler $f -o $outfile
   # example 
-  # markdown-math-gh-compiler README_latex.md -o README.md
+  # markdown-math-gh-compiler src/README_latex.md -o README.md
 done
-# stage the updates
+### stage the updates
 git add .
 
-# pop the stash to return repo to previous condition
+### pop the stash to return repo to previous condition
 STASHES=$(git stash list)
 if [[ $STASHES == "$STASH_NAME" ]]; then
   git stash pop -q
