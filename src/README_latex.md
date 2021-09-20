@@ -50,6 +50,13 @@ Here it is centered:
 
 $$e^{i\pi} = -1$$
 
+**Note:** The source for this is `$$e^{i\pi} = -1$$`. Notice the absence of line breaks before/after `$$`; the following may not render correctly:
+```
+$$
+e^{i\pi} = -1
+$$
+```
+
 <hr/>
 
 Other potential tools:

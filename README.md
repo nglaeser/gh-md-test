@@ -56,6 +56,14 @@ Here it is centered:
 
 <p align="center"><img alt="e^{i\pi} = -1" src="https://render.githubusercontent.com/render/math?math=e%5E%7Bi%5Cpi%7D%20%3D%20-1"/></p>
 
+**Note:** The source for this is `$$e^{i\pi} = -1$$`. Notice the absence of line breaks before/after `$$`; the following may not render correctly:
+
+```
+$$
+e^{i\pi} = -1
+$$
+```
+
 <hr/>
 
 Other potential tools:
