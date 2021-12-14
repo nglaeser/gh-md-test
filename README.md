@@ -70,3 +70,4 @@ Other potential tools:
 * VSCode plugin to (manually and on a per-equation basis) do the same thing: [math-to-image](https://marketplace.visualstudio.com/items?itemName=MeowTeam.vscode-math-to-image). It also includes an option to create a local SVG instead.
 * [Website](https://md-math.netlify.app/) that gives you both MD and HTML syntax for embedding the equation image
 * [Another web app](https://tex-image-link-generator.herokuapp.com/) that does the same thing
+* [github-texify](https://github.com/agurodriguez/github-texify)
